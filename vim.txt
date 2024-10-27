@@ -1,4 +1,25 @@
-set nu rnu
+set number
+
+set mouse=a
+set clipboard=unnamed
+set showcmd
+
+set ruler
+
+set encoding=utf-8
+set showmatch
+set sw=4
+
+syntax enable
+
+set autoindent
 
 
+set history=1000
+set title
 
+call plug#begin()
+ 
+Plug 'https://github.com/preservim/nerdtree'
+ 
+call plug#end()
