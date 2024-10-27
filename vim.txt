@@ -18,8 +18,20 @@ set autoindent
 set history=1000
 set title
 
+set background=dark
+
 call plug#begin()
  
+" Plug 'https://github.com/preservim/nerdtree'
+Plug 'https://github.com/vim-airline/vim-airline'
 Plug 'https://github.com/preservim/nerdtree'
- 
+Plug 'morhetz/gruvbox'
+" Plug 'itmammoth/doorboy.vim'
+Plug 'https://github.com/jiangmiao/auto-pairs'
+
 call plug#end()
+
+colorscheme gruvbox
+highlight Normal ctermfg=White
+
+let g:airline#extensions#tabline#enabled = 1
