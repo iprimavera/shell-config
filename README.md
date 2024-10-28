@@ -1,5 +1,5 @@
 # configuracion de vim
-para reemplazar tus ajustes con estos, ejecuta el script de change.sh
+para reemplazar tus ajustes con estos, ejecuta el script de change.sh escribiendo "bash change.sh"
 
 ** si tenias algun plug instalado, abre vim y escribe ":PlugClean"
 
