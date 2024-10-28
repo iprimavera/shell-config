@@ -1,6 +1,6 @@
 set number
 
-set mouse=a
+" set mouse=a
 set clipboard=unnamed
 set showcmd
 
@@ -24,7 +24,7 @@ call plug#begin()
  
 " Plug 'https://github.com/preservim/nerdtree'
 Plug 'https://github.com/vim-airline/vim-airline'
-Plug 'https://github.com/preservim/nerdtree'
+" Plug 'https://github.com/preservim/nerdtree'
 Plug 'morhetz/gruvbox'
 " Plug 'itmammoth/doorboy.vim'
 Plug 'https://github.com/jiangmiao/auto-pairs'
