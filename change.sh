@@ -5,6 +5,12 @@ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 
 cat vim.txt > ~/.vimrc
 
-echo "** changed succesfully."
+echo " ** vimrc changed succesfully."
+
+sudo apt install zsh
+
+mkdir -p ~/.zshrc
+
+
 
 exit 0
