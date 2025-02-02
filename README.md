@@ -4,6 +4,8 @@ para reemplazar tus ajustes con estos, ejecuta el script de change.sh escribiend
 ## Para que los iconos salgan bien debes instalar manualmente la fuente MesloLS NF
 https://github.com/romkatv/powerlevel10k#meslo-nerd-font-patched-for-powerlevel10k
 
+para instalar nvim en wsl: https://www.youtube.com/watch?v=xBU2nuMCMRQ&t
+
 ** si tenias algun plug instalado, abre vim y escribe ":PlugClean"
 
 despues de todo, para instalar los nuevos Plugins, abre vim y escribe ":PlugInstall"
