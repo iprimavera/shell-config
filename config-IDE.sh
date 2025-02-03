@@ -4,7 +4,7 @@
 PS3=$'\n'" * Elige una opcion: "
 
 
-select opcion in "install Plug de vim" "config vim" "Salir"; do
+select opcion in "install Plug de vim" "config vim" "install nvim" "config nvim" "Salir"; do
    	case $REPLY in
 
 ####################################################
@@ -26,7 +26,21 @@ select opcion in "install Plug de vim" "config vim" "Salir"; do
 
 ######################################################
 
-		3) tput setaf 1; echo "Saliendo..."; tput sgr0; break;;
+		3)
+			#TODO instalacion
+			mkdir -p ~/.config/nvim
+			tput setaf 2; echo " ** Neovim installed succesfully."; tput sgr0
+		;;
+
+		4)
+			cat rc-files/nvim/init.txt > ~/.config/nvim/init.lua
+#			cat rc-files/nvim/lazy.txt > ~/.config/nvim/lua/lazy-cfg.lua
+			tput setaf 2; echo " ** Neovim configured succesfully."; tput sgr0
+		;;
+
+######################################################
+
+		5) tput setaf 1; echo "Saliendo..."; tput sgr0; break;;
 		*) tput setaf 1; echo "Opción inválida. Intenta de nuevo."; tput sgr0;;
    	esac
 done
