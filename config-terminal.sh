@@ -27,6 +27,7 @@ select opcion in "añadir config de p10k (solo si tienes la fuente MesloLG)" "in
 
 		3)
 			cat rc-files/kitty.txt > ~/.config/kitty/kitty.conf
+			tput setaf 2; echo " ** archivo de configuracion de kitty cambiado."; tput sgr0
 		;;
 
 ######################################################
