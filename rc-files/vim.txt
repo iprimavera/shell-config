@@ -27,13 +27,19 @@ call plug#begin()
 " Plug 'https://github.com/preservim/nerdtree'
 Plug 'https://github.com/vim-airline/vim-airline'
 " Plug 'https://github.com/preservim/nerdtree'
-Plug 'morhetz/gruvbox'
+" Plug 'morhetz/gruvbox'
+Plug 'ghifarit53/tokyonight-vim'
 " Plug 'itmammoth/doorboy.vim'
 Plug 'https://github.com/jiangmiao/auto-pairs'
 
 call plug#end()
+set termguicolors
 
-colorscheme gruvbox
+let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_enable_italic = 1
+
+colorscheme tokyonight
 highlight Normal ctermfg=White
 
+let g:airline_theme = "tokyonight"
 let g:airline#extensions#tabline#enabled = 1
