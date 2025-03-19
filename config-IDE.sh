@@ -27,7 +27,7 @@ select opcion in "install Plug de vim" "config vim" "install nvim" "config nvim"
 ######################################################
 
 		3)
-			#TODO instalacion
+			apt install neovim -y
 			mkdir -p ~/.config/nvim
 			tput setaf 2; echo " ** Neovim installed succesfully."; tput sgr0
 		;;
