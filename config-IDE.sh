@@ -28,10 +28,13 @@ select opcion in "install Plug de vim" "config vim" "install nvim" "Salir"; do
 
 		3)
 			curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
-      rm -rf /opt/nvim
-      tar -C /opt -xzf nvim-linux-x86_64.tar.gz
-      echo "export PATH=\"\$PATH:/opt/nvim-linux-x86_64/bin\"" >> ~/.zshrc
-      git clone https://github.com/NvChad/starter ~/.config/nvim
+      		rm -rf /opt/nvim
+      		tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+      		echo """echo "export PATH=\"\\\$PATH:/opt/nvim-linux-x86_64/bin\"" >> \$HOME/.zshrc
+rm -rf ~/.config/nvim
+rm -rf ~/.local/state/nvim
+rm -rf ~/.local/share/nvim
+git clone https://github.com/NvChad/starter \$HOME/.config/nvim"""
 			tput setaf 2; echo " ** Neovim installed succesfully."; tput sgr0
 		;;
 
