@@ -5,7 +5,7 @@ PS3=$'\n'" * Elige una opcion: "
 
 
 select opcion in "install Plug de vim" "config vim" "install nvim" "Salir"; do
-   	case $REPLY in
+  case $REPLY in
 
 ####################################################
 
@@ -27,7 +27,11 @@ select opcion in "install Plug de vim" "config vim" "install nvim" "Salir"; do
 ######################################################
 
 		3)
-			apt install neovim -y
+			curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+      rm -rf /opt/nvim
+      tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+      echo "export PATH=\"\$PATH:/opt/nvim-linux-x86_64/bin\"" >> ~/.zshrc
+      git clone https://github.com/NvChad/starter ~/.config/nvim
 			tput setaf 2; echo " ** Neovim installed succesfully."; tput sgr0
 		;;
 
@@ -41,7 +45,8 @@ select opcion in "install Plug de vim" "config vim" "install nvim" "Salir"; do
 
 		4) tput setaf 1; echo "Saliendo..."; tput sgr0; break;;
 		*) tput setaf 1; echo "Opción inválida. Intenta de nuevo."; tput sgr0;;
-   	esac
+  esac
+
 done
 
 exit 0
